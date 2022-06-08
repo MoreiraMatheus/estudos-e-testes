@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: white;
+    position: fixed;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+main{
+    width: 400px;
+    margin: auto;
+}
+
+.caixa{
+    height: 300px;
+    width: 300px;
+    margin: 40px 0px;
+    cursor: pointer;
+}
+
+#caixa1, #bt1{
+    background-color: blue;
+}
+#caixa2, #bt2{
+    background-color: green;
+}
+#caixa3, #bt3{
+    background-color: yellow;
+}
+#caixa4, #bt4{
+    background-color: red;
+}
+#caixa5, #bt5{
+    background-color: purple;
+}
