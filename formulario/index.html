@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Meu primeiro formulário HTML</h1>
+    <form action="" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" value="nome aqui">
+        </div>
+
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade">
+        </div>
+
+        <!-- <div>
+            <label for="estuda">Estuda:</label>
+            <input type="checkbox" name="" id="estuda" value="back-end">
+        </div> -->
+
+        <div>
+            <label for="email">e-mail:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="msg">Mensagem:</label>
+            <br>
+            <textarea name="msg" id="msg" cols="40" rows="10">Mensagem aqui</textarea>
+        </div>
+
+        <div>
+            <button type="button">
+                Enviar
+            </button>
+        </div>
+
+        <div>
+            <h2>aprendi a usar radio buttons</h2>
+            <input type="radio" name="stack" id="1">
+            <label for="1">back</label>
+            
+            <input type="radio" name="stack" id="2">
+            <label for="2">front</label>
+
+            <input type="radio" name="stack" id="3">
+            <label for="3">full</label>
+        </div>
+
+        <div>
+            <h2>e agora checkboxes</h2>
+            <input type="checkbox" name="box" id="box1">
+            <label for="box1">teste1</label>
+
+            <input type="checkbox" name="box" id="box2">
+            <label for="box2">teste 2</label>
+
+            <input type="checkbox" name="box" id="box3">
+            <label for="box3">teste 3</label>
+        </div>
+
+        <div>
+            <input type="reset" value="reset">
+        </div>
+    </form>
+    <!-- 
+    nome
+    idade
+    qual stack, front brack etc 
+    e-mail
+    mensagem que deseja enviar-->
+</body>
+</html>
