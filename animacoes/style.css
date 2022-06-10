@@ -1,0 +1,41 @@
+@keyframes r-move{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 300px;
+    }
+}
+
+@keyframes l-move{
+    from{
+        left: 300px;
+    }
+    to{
+        left: 0px;
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#caixa1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.move-direita{
+    left: 300px;
+    animation-name: r-move;
+    animation-duration: 1s;
+}
+
+.move-esquerda{
+    left: 0px;
+    animation-name: l-move;
+    animation-duration: 1s;
+}
