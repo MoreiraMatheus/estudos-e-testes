@@ -6,7 +6,7 @@ h1{
 }
 
 h2{
-    margin-top: 10px;
+    margin-top: 30px;
     color: green;
 }
 
@@ -19,7 +19,8 @@ main{
     background-color: white;
     border-radius: 5px;
     padding: 10px;
-    width: 800px;
+    padding-bottom: 80px;
+    width: 550px;
     margin: auto;
     margin-bottom: 100px;
 }
@@ -27,30 +28,57 @@ main{
 .container{
     border: 1px solid black;
     width: 500px;
-    height: 500px;
+    height: 300px;
     margin: auto;
 }
 
-.caixa1{
+#caixa1{
     background-color: blue;
     width: 100px;
     height: 100px;
-}
-
-.caixa2{
-    background-color: red;
-    width: 100px;
-    height: 100px;
-}
-
-.caixa3{
-    background-color: yellow;
-    width: 100px;
-    height: 100px;
-}
-
-#relative{
     position: relative;
     top: 100px;
     left: 400px;
+}
+
+#caixa2{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 200px;
+}
+
+#caixa3{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 100px;
+}
+
+
+#fixed{
+    position: fixed;
+    top: 3px;
+    right: 94%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 2px;
+}
+
+.sticky{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+#div-absolute{
+    display: flex;
+}
+
+#absolute{
+    position: absolute;
+    left: 93%;
 }

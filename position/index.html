@@ -19,27 +19,33 @@
     <h1>Entendendo position</h1>
 
     <main>
-        <h2>Static</h2>
+        <h2 class="sticky">Static</h2>
         <p>Valor padrão de toda tag HTML.</p>
 
-        <h2>Relative</h2>
+        <h2 class="sticky">Relative</h2>
         <p>Valor relativo a caixa onde a tag está.</p>
+        <p>As caixas a seguir foram arrumadas usando position relative.</p>
         <div class="container">
-            <div class="caixa1" id="relative"></div>
-            <div class="caixa2"></div>
+            <div id="caixa1"></div>
+            <div id="caixa2"></div>
+            <div id="caixa3"></div>
         </div>
 
-        <h2>Fixed</h2>
-        <p>Fixa algum objeto na tela independente se ela for movida ou não, pode ser afetada por outras tags</p>
-        <div class="container"></div>
+        <h2 class="sticky">Fixed</h2>
+        <p>Fixa algum objeto na tela independente se ela for movida ou não, pode ser afetada por outras tags.</p>
+        <p>exemplo disso é aquele objeto no canto superior esquerdo da tela.</p>
+        <div id="fixed">valor fixo</div>
 
-        <h2>Sticky</h2>
-        <p></p>
-        <div class="container"></div>
 
-        <h2>Absolute</h2>
-        <p></p>
-        <div class="container"></div>
+        <h2 class="sticky">Sticky</h2>
+        <p>Tags com position sticky "grudam" ao encostarem um ponto especifico.</p>
+        <p>Exemplo disso são os titulos acima que grudaram no topo da página.</p>
+
+        <h2 class="sticky">Absolute</h2>
+        <div id="div-absolute">
+            <p>Fixa um valor em algum canto da pagina ignorando qualquer outra tag, como o botão que está aqui na direita.</p>
+            <button id="absolute">voltar ao topo</button>
+        </div>
     </main>
 
 </body>
