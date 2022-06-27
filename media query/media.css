@@ -1,0 +1,17 @@
+@media (max-width: 800px){
+    #container{
+        background-color: blue;
+    }
+}
+
+@media (max-width: 500px){
+    #container{
+        flex-direction: column;
+    }
+}
+
+@media (max-height: 500px){
+    #contaiener{
+        background-color: yellow;
+    }
+}
