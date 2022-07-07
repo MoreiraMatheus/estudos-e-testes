@@ -2,8 +2,10 @@ const adicionar = document.getElementById('adicionar')
 const excluir = document.getElementById('excluir')
 
 class Produto{
-    constructor(){}
-    
+    constructor(){
+        let id = 1
+    }
+
     adicionar(){
         console.log('Produto adicionado')
     }
@@ -21,3 +23,4 @@ adicionar.addEventListener('click', () => {
 excluir.addEventListener('click', () => {
     produto.excluir()
 })
+
