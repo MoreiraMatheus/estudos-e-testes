@@ -4,9 +4,7 @@ async function pegaDados(id=1){
     try {
         const RESPONSE = await fetch(BASE_URL + id + '/')
         const DATA = await RESPONSE.json()
-        const NOME_POKE = DATA.name
-        console.log(NOME_POKE)
-        // return NOME_POKE
+        return DATA
     } catch (error) {
         console.log('opa tivemos um erro com a API')
         console.log(error)
@@ -18,4 +16,5 @@ function atualizaP(texto){
     paragrafo.innerText = texto
 }
 
-pegaDados()
+pegaDados().then(res => {console.log(res.name)})
+pegaDados().then(res => {console.log(res.id)})
