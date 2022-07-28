@@ -23,7 +23,10 @@ const App = () =>{
       <FalaNumeros frase="me passaram tambem esse valor" numero="2"/>
       <FalaNumeros frase="e por fim me passaram esse" numero="3"/>
       <Lista></Lista> */}
-      <Formulario></Formulario>
+      {/* <Formulario></Formulario>
+      <br/> */}
+      <p>olá</p>
+      <Button>trocar texto</Button>
     </>
   )
 }
