@@ -5,6 +5,7 @@ import HelloWorld from "./components/HelloWorld";
 import FalaNumeros from "./components/FalaNumeros";
 import Lista from "./components/Lista";
 import Formulario from "./components/Form";
+import Contador from "./components/contador";
 
 const App = () =>{
   const NOME = 'Matheus'
@@ -25,8 +26,9 @@ const App = () =>{
       <Lista></Lista> */}
       {/* <Formulario></Formulario>
       <br/> */}
-      <p>olá</p>
-      <Button>trocar texto</Button>
+      {/* <p className="distancia">olá</p>
+      <Button>olá</Button> */}
+      <Contador/>
     </>
   )
 }

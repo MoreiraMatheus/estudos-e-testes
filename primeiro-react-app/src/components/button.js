@@ -2,13 +2,9 @@ import React from "react";
 
 import './button.css'
 
-const Button = ({ children }) =>{
-    function meuClick(){
-        window.alert('me clicaram')
-    }
-
+const Button = ({ children, func}) =>{
     return(
-        <button className="bt" onClick={meuClick}>{children}</button>
+        <button className="bt" onClick={func}>{children}</button>
     )
 }
 
