@@ -1,3 +1,3 @@
-import { nome } from "./main";
-
-console.log(nome)
+export function printNome(){
+    return 'Deixa quieto, CONSEGUI!!!!'
+}
