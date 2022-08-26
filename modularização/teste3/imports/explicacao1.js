@@ -1,0 +1,1 @@
+export const nullishCoalescingOperator = 'O nullish coalescing operator é um operador capaz de detectar valores "null" ou "undefined" e susbtitui-los por um valor padrão.'
