@@ -1,0 +1,1 @@
+//olá sou um arquivo de teste que não foi ignorado pelo gitignore
