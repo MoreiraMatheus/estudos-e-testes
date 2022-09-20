@@ -4,7 +4,7 @@ try {
 }
 //bloco de código que será rodado caso o bloco anterior gere um erro
 catch (error) {
-  console.log('erro encontrado:\n' , error.message)
+  console.log('erro encontrado:\n', error.message)
 }
 //bloco de código que será excecutado independe se houver erro ou não
 finally{

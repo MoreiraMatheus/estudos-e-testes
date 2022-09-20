@@ -1,16 +1,22 @@
-import { Card } from "../Card"
-import { Tittle } from "../Tittle"
+import { createContext } from "react"
+import ContextButton from "../ContextButton"
+
+export const Contexto = createContext()
+
+const people = {name: 'Maths', job: 'dev', sayHello: () => {console.log('hello')}}
+
+function helloWorld(){
+    console.log('hello world')
+}
 
 const App = () => {
     return(
-        <>
-            <Tittle>Praticando um pouco de styled-components</Tittle>
-            <Card>
-                <h2>Matheus Moreira</h2>
-                <p>Developer</p>
-                <p>19 anos</p>
-            </Card>
-        </>
+    <>
+        <h1>Hello world</h1>
+        <Contexto.Provider value={{people,  olaMundo : helloWorld }}>
+            <ContextButton/>
+        </Contexto.Provider>
+    </>
     )
 }
 
