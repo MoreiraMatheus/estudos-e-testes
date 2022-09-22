@@ -4,11 +4,11 @@ import { Contexto } from "../App/App"
 
 const ContextButton = () => {
 
-  const { people, olaMundo } = useContext(Contexto)
+  const { people, setHello, hello } = useContext(Contexto)
 
   return(
   <>
-    <button onClick={olaMundo}>Click</button>
+    <button onClick={ () => {setHello(!hello)} }>Traduzir</button>
     <h1>{people.name}</h1>
   </>
   )
