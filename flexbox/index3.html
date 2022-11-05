@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>testando a propriedade Flex</title>
+
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #5a5a5a;
+      color: #fafafa;
+    }
+
+    main{
+      display: flex;
+      flex-direction: column;
+      background-color: #ccc;
+      height: 400px;
+      width: 800px;
+      margin: 0 auto;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .caixa{
+      width: 100px;
+      height: 100px;
+      /* border: 1px solid black; */
+    }
+
+    .caixa1{
+      background-color: yellow;
+      flex-grow: 0;
+      flex-shrink: 0;
+      /* flex-basis: 10px; */
+    }
+    .caixa2{
+      background-color: red;
+      flex-grow: 0;
+      flex-shrink: 1;
+    }
+    .caixa3{
+      background-color: blue;
+      flex-grow: 0;
+      flex-shrink: 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Aprendendo Flexbox</h1>
+  <main>
+    <div class="caixa caixa1"></div>
+    <div class="caixa caixa2"></div>
+    <div class="caixa caixa3"></div>
+  </main>
+</body>
+</html>
