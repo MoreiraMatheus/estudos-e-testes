@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "react-native-playground",
+    "slug": "react-native-playground",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+.bt{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer
+}
