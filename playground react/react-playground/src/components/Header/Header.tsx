@@ -1,24 +1,17 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { StyledLink } from "./style";
 
 export function Header() {
+  const navigate = useNavigate();
   return (
     <>
       {/* entender pq esse miserável não aceita perder o underline */}
-      <Link to="/">
-        <StyledLink>
-          Home
-        </StyledLink>
-      </Link>
+      <StyledLink onClick={() => navigate("/")}>Home</StyledLink>
 
-      <Link to="/contact">
-        <StyledLink>Contato</StyledLink>
-      </Link>
+      <StyledLink onClick={() => navigate("/contact")}>Contato</StyledLink>
 
-      <Link to="/login">
-        <StyledLink>Login</StyledLink>
-      </Link>
+      <StyledLink onClick={() => navigate("/login")}>Login</StyledLink>
     </>
   );
 }

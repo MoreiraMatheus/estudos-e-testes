@@ -5,12 +5,9 @@ import { light_theme } from "../styles/themes/light";
 import { dark_theme } from "../styles/themes/dark";
 
 import { Header } from "../components/Header/Header";
+import { MainRoutes } from "../pages/routes";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import { Contact } from "../pages/Contact";
-import { Home } from "../pages/Home";
-import { Login } from "../pages/Login";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
@@ -18,15 +15,9 @@ function App() {
       <ThemeProvider theme={dark_theme}>
         <GlobalStyle />
 
-
-        <BrowserRouter>
-          <Header/>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </BrowserRouter>
+        <Router>
+          <MainRoutes />
+        </Router>
       </ThemeProvider>
     </>
   );
