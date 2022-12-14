@@ -5,7 +5,7 @@ import { light_theme } from "../styles/themes/light";
 import { dark_theme } from "../styles/themes/dark";
 
 import { Header } from "../components/Header/Header";
-import { MainRoutes } from "../pages/routes";
+import { MainRoutes } from "../Routes/routes";
 
 import { BrowserRouter as Router } from "react-router-dom";
 

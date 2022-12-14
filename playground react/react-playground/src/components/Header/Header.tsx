@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import { StyledLink } from "./style";
+import { StyledLink } from "../StyledLink/style";
 
 export function Header() {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ export function Header() {
 
       <StyledLink onClick={() => navigate("/contact")}>Contato</StyledLink>
 
-      <StyledLink onClick={() => navigate("/login")}>Login</StyledLink>
+      <StyledLink onClick={() => navigate("/login/2")}>Login</StyledLink>
     </>
   );
 }
