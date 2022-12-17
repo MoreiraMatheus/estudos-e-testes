@@ -1,13 +1,9 @@
 import GlobalStyle from "../styles/GlobalStyles";
 
 import { ThemeProvider } from "styled-components";
-import { light_theme } from "../styles/themes/light";
 import { dark_theme } from "../styles/themes/dark";
 
-import { Header } from "../components/Header/Header";
-import { MainRoutes } from "../Routes/routes";
-
-import { BrowserRouter as Router } from "react-router-dom";
+import { StyledCard } from "../components/StyledCard";
 
 function App() {
   return (
@@ -15,12 +11,10 @@ function App() {
       <ThemeProvider theme={dark_theme}>
         <GlobalStyle />
 
-        <Router>
-          <MainRoutes />
-        </Router>
+        <StyledCard/>
       </ThemeProvider>
     </>
-  );
+  ); 
 }
 
 export default App;

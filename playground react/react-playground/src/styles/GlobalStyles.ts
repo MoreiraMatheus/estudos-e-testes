@@ -11,15 +11,9 @@ export default createGlobalStyle`
     width: 100vw;
     height: 100vh;
     background-color: ${({ theme }) => theme.bgColor};
-  }
-  
-  main{
-    height: 300px;
-    width: 300px;
-    margin: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
   }
 `
