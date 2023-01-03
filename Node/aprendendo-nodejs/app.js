@@ -1,4 +1,5 @@
 const express = require("express");
+const { randomUUID } = require("crypto");
 
 const app = express();
 
@@ -20,9 +21,17 @@ app.use(express.json())
 // })
 
 app.post('/products', (req, res)=>{
-  const body = req.body
+  const { name, price } = req.body
 
-  console.log(body)
+  const product = { 
+    name,
+    price,
+    id: randomUUID()
+  }
+
+  products.push(product)
+
+  return res.json(product)
 })
 
 app.listen(4002, () => console.log("servidor rodando na porta 4002"));
