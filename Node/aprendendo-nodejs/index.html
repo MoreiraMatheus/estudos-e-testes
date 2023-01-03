@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testando back end com node</title>
+</head>
+<body>
+  <form action="http://www.localhost:4002/products" method="get">
+    <fieldset >
+      <legend>Nome</legend>
+
+      <label for="iname">Nome:</label>
+      <input type="text" name="name" id="iname">
+    </fieldset><br>
+
+    <fieldset >
+      <legend>Idade</legend>
+
+      <label for="iage">Idade:</label>
+      <input type="text" name="age" id="iage">
+    </fieldset><br>
+
+    <fieldset>
+      <button type="submit">Enviar</button>
+      <button type="reset">Reset</button>
+    </fieldset>
+  </form>
+</body>
+</html>
