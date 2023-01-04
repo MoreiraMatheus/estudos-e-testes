@@ -12,11 +12,11 @@ GET http://localhost:4002/products/
 
 ###
 
-PUT  http://localhost:4002/products/5d4c570b-516b-4b31-a08b-b51617a71edb
+PUT  http://localhost:4002/products/a0373db6-7144-47a9-ad9a-c0faded98200
 content-type: application/json
 
 {
-  "name": "caneta preta",
+  "name": "caneta",
   "price": 1
 }
 
