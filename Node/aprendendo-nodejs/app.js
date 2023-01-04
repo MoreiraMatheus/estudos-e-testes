@@ -23,6 +23,7 @@ app.use(express.json())
 app.post('/products', (req, res)=>{
   const { name, price } = req.body
 
+
   const product = { 
     name,
     price,
@@ -45,8 +46,27 @@ app.get('/products/:id', (req, res)=>{
   return res.json(product)
 })
 
-app.put()
+app.put('/products/:id', (req, res)=>{
+  const { id } = req.params
+  const { name, price } = req.body
+  
+  const productIndex = products.findIndex(product => product.id === id)
+  products[productIndex] = {
+    ...products[productIndex],
+    name,
+    price
+  }
 
-app.delete()
+  return res.json({message: 'produto alterado com sucesso!'})
+})
+
+app.delete('/products/:id', (req, res)=>{
+  const { id } = req.params
+  const productIndex = products.findIndex(product => product.id === id)
+
+  products.splice(productIndex, 1)
+
+  return res.json({message: 'produto removido com sucesso!'})
+})
 
 app.listen(4002, () => console.log("servidor rodando na porta 4002"));
