@@ -23,11 +23,6 @@ app.use(express.json())
   query -> dados passados pela url app/?name=nome&age=a00
 */
 
-//realizar testes com esse código:
-// app.get("/test", (req, res)=>{
-//   res.send('formulário enviado')
-//   console.log(req.query)
-// })
 
 app.post('/products', (req, res)=>{
   const { name, price } = req.body
