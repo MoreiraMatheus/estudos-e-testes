@@ -21,7 +21,7 @@ form{
   margin: 16px auto;
 }
 
-input, select{
+input, select, textarea{
   padding: 8px;
   outline: none;
 }

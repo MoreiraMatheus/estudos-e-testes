@@ -16,13 +16,13 @@
   <h1>Validação de formulário</h1>
   <form onsubmit='event.preventDefault()'>
     <label for="iName">Nome:</label>
-    <input type="text" id="iName" name="Name" required>
+    <input type="text" id="iName" name="Name" placeholder="nome completo" required>
 
     <label for="iAge">Idade:</label>
-    <input type="number" id="iAge" name="Age" min="0" max="100" required>
+    <input type="number" id="iAge" name="Age" min="0" max="100" placeholder="idade" required>
 
     <label for="iEmail">e-mail</label>
-    <input type="email" name="Email" id="iEmail" required>
+    <input type="email" name="Email" id="iEmail" placeholder="seu email">
 
     <label for="iJob">Trabalha com:</label>
     <select name="Job" id="iJob">
@@ -42,10 +42,5 @@
       <button type="reset">Limpar</button>
     </div>
   </form>
-
-  <div class="data">
-    <h1>Os dados passados ao formulário foram:</h1>
-    <p></p>
-  </div>
 </body>
 </html>
