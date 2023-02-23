@@ -16,10 +16,10 @@
   <h1>Validação de formulário</h1>
   <form onsubmit='event.preventDefault()'>
     <label for="iName">Nome:</label>
-    <input type="text" id="iName" name="Name" placeholder="nome completo" required>
+    <input type="text" id="iName" name="Name" placeholder="nome completo">
 
     <label for="iAge">Idade:</label>
-    <input type="number" id="iAge" name="Age" min="0" max="100" placeholder="idade" required>
+    <input type="number" id="iAge" name="Age" min="0" max="100" placeholder="idade">
 
     <label for="iEmail">e-mail</label>
     <input type="email" name="Email" id="iEmail" placeholder="seu email">
@@ -44,7 +44,11 @@
   </form>
   
   <dialog>
-    <button id="closePopup">OK</button>
+    <div id="dataWrapper">
+      <h1>Dados coletados</h1>
+      <p id="data"></p>
+      <button id="closePopup">OK</button>
+    </div>
   </dialog>
 </body>
 </html>

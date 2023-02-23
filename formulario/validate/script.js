@@ -6,14 +6,16 @@ const job = document.querySelector('#iJob')
 const message = document.querySelector('#iMessage')
 const popup = document.querySelector('dialog')
 const closePopup = document.querySelector('#closePopup')
+const dataP = document.querySelector('#data')
 
 function submitForm(){
   popup.showModal()
-  console.log(`fullName: ${fullName.value}`)
-  console.log(`age: ${age.value}`)
-  console.log(`email: ${email.value}`)
-  console.log(`job: ${job.value}`)
-  console.log(`message: ${message.value}`)
+  dataP.innerHTML = ''
+  dataP.innerHTML += `fullName: ${fullName.value}</br>`
+  dataP.innerHTML += `age: ${age.value}</br>`
+  dataP.innerHTML += `email: ${email.value}</br>`
+  dataP.innerHTML += `job: ${job.value}</br>`
+  dataP.innerHTML += `message: ${message.value}</br>`
 }
 
 closePopup.onclick = () => {
